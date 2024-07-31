@@ -25,7 +25,4 @@ class AddressBook(UserDict):
             print("Record does not exists")
 
     def __str__(self):
-        records = ""
-        for name in self:
-            records += f"{self[name]}\n"
-        return records
+        return ''.join(f"{record}\n" for record in self.values())

@@ -11,10 +11,15 @@ def main():
     alex = book.add_record("Alex")
     alex.add_phone('0931199999')
     alex.add_phone('0931156688')
+    alex.edit_phone('0931156688', '0931111999')
 
     tom = book.add_record("Tom")
     tom.add_phone('0931199999')
     tom.add_phone('0931156688')
+    tom.add_phone('0631112238')
+    tom.remove_phone('0931156688')
+    tom.remove_phone('0931199999')
+    tom.remove_phone('0931999559')
     print(book)
 
 
